@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BudgetManager.cs" />
+    <Compile Include="BudgetUnit.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
