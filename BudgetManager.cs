@@ -70,7 +70,7 @@ namespace FamilyBudget
             SqlConnection Connection = new SqlConnection(ConnectionString);
             if (Connection.State != ConnectionState.Open) Connection.Open();
 
-            string SQLQuerry = "SELECT * FROM Units WHERE id=" + id;
+            string SQLQuerry = "SELECT id,date,description,value,type FROM Units WHERE id=" + id;
 
             SqlCommand Command = new SqlCommand(SQLQuerry, Connection);
             SqlDataReader reader = Command.ExecuteReader();
@@ -96,7 +96,7 @@ namespace FamilyBudget
             SqlConnection Connection = new SqlConnection(ConnectionString);
             if (Connection.State != ConnectionState.Open) Connection.Open();
 
-            string SQLQuerry = "SELECT * FROM Units";
+            string SQLQuerry = "SELECT id,date,description,value,type FROM Units";
 
             SqlCommand Command = new SqlCommand(SQLQuerry, Connection);
             SqlDataReader reader = Command.ExecuteReader();
