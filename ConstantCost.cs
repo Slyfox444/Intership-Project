@@ -16,6 +16,7 @@ namespace FamilyBudget
         public ConstantCost()
         {
             InitializeComponent();
+            TopMost = true;
         }
 
         private void AddBT_Click(object sender, EventArgs e)

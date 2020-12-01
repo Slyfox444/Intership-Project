@@ -78,7 +78,7 @@ namespace FamilyBudget
             while (reader.Read())
             {
                 unit.Id = (int)reader.GetValue(0);
-                unit.Date = (DateTime)reader.GetValue(1);
+                unit.Date = (string)reader.GetValue(1);
                 unit.Description = (string)reader.GetValue(2);
                 unit.Value = float.Parse(reader.GetValue(3).ToString());
                 unit.Type = (string)reader.GetValue(4);
@@ -106,7 +106,7 @@ namespace FamilyBudget
             {
                 BudgetUnit unit = new BudgetUnit();
                 unit.Id = (int)reader.GetValue(0);
-                unit.Date = (DateTime)reader.GetValue(1);
+                unit.Date = (string)reader.GetValue(1);
                 unit.Description = (string)reader.GetValue(2);
                 unit.Value = float.Parse(reader.GetValue(3).ToString());
                 unit.Type = (string)reader.GetValue(4);
